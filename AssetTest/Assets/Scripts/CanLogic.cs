@@ -6,9 +6,21 @@ public class CanLogic : MonoBehaviour {
 	public float fForce = 10.0f;
 	public float fTorque = 10.0f;
 	
+	public bool bInAir = false;
+	
 	// Use this for initialization
 	void Start () {
 	
+	}
+	
+	void OnCollisionExit(Collision theCollision)
+	{
+		bInAir = true;
+	}
+	
+	void OnCollisionEnter(Collision theCollision)
+	{
+		bInAir = false;
 	}
 	
 	// Update is called once per frame
