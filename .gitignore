@@ -175,3 +175,9 @@ pip-log.txt
 *.pidb
 
 *.userprefs
+
+*.pidb
+
+AssetTest/AssetTest.userprefs
+
+AssetTest/Assembly-CSharp.pidb
