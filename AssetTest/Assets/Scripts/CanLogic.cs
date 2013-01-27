@@ -8,6 +8,8 @@ public class CanLogic : MonoBehaviour {
 	
 	public bool bInAir = false;
 	
+	public bool bPopIt = false;
+	
 	// Use this for initialization
 	void Start () {
 	
@@ -26,8 +28,9 @@ public class CanLogic : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (bPopIt)
 		{
+			bPopIt = false;
 			rigidbody.AddForce(new Vector3(0,fForce,0), ForceMode.Impulse);
 			rigidbody.AddTorque(new Vector3(0,0,fTorque), ForceMode.Impulse);
 		}

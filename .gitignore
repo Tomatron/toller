@@ -181,3 +181,9 @@ pip-log.txt
 AssetTest/AssetTest.userprefs
 
 AssetTest/Assembly-CSharp.pidb
+
+.DS_Store
+
+AssetTest/.DS_Store
+
+AssetTest/Assets/.DS_Store
