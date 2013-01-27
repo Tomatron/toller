@@ -172,3 +172,12 @@ pip-log.txt
 *.csproj
 *.unityproj
 *.sln
+*.pidb
+
+*.userprefs
+
+*.pidb
+
+AssetTest/AssetTest.userprefs
+
+AssetTest/Assembly-CSharp.pidb
