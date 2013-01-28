@@ -7,10 +7,8 @@ public class TimingCircleLogic : MonoBehaviour {
 	float y = 1.0f;
 	
 	bool bKeyDown = false;
-	
 	public CanLogic can;
-	
-	public GameObject target;
+	public GameObject targetImage;
 	
 	// Use this for initialization
 	void Start () {
@@ -27,7 +25,7 @@ public class TimingCircleLogic : MonoBehaviour {
 			{
 				transform.localScale = new Vector3(4.0f, 4.0f, 0.01f);
 				renderer.enabled = true;
-				target.renderer.enabled = true;
+				targetImage.renderer.enabled = true;
 			}
 			
 			//key is totally being held down
@@ -43,9 +41,9 @@ public class TimingCircleLogic : MonoBehaviour {
 		//on release
 		if (Input.GetKeyUp(KeyCode.Space))
 		{
-			target.renderer.enabled = false;
+			targetImage.renderer.enabled = false;
 			renderer.enabled = false;
-			can.bPopIt = true;
+			can.HitCan(10.0f, Random.Range(5.0f, 20.0f));
 		}
 		
 		//Debug.Log(x);
