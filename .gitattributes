@@ -25,4 +25,3 @@
 # Unity Stuff?
 *.unity binary
 *.prefab binary
-*.meta text diff=astextplain
