@@ -42,7 +42,6 @@ public class CanLogic : MonoBehaviour {
 	
 	void SetDamageState(int state)
 	{
-		//TODO: Make this function
 		Material m = mat_0;
 		
 		if (state == 1)
