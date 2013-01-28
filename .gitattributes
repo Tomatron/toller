@@ -25,4 +25,4 @@
 # Unity Stuff?
 *.unity binary
 *.prefab binary
-*.meta binary
+*.meta text
